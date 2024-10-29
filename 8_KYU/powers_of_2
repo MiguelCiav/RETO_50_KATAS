@@ -1,0 +1,16 @@
+// ENLACE DEL EJERCICIO: https://www.codewars.com/kata/57a083a57cb1f31db7000028/cpp
+
+#include <vector>
+#include <cstdint>
+#include <cmath>
+
+std::vector<uint64_t> powers_of_two(int n) {
+  std::vector<uint64_t> result;
+  if(n == 0){
+    return {1};
+  }
+  for(int i = 0; i <= n; i++) {
+    result.push_back(pow(2,i));
+  }
+  return result;
+}
